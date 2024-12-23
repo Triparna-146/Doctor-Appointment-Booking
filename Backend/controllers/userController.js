@@ -104,7 +104,7 @@ const updateProfile = async (req, res) => {
             await userModel.findByIdAndUpdate(userId, {image:imageUrl})
         }
 
-        res.json({success: true, message:'Profile Uploaded'})
+        res.json({success: true, message:'Profile Updated'})
 
     } catch (error) {
         console.log(error)
